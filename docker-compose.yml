@@ -3,6 +3,7 @@ backend:
   command: bash start.sh
   volumes:
     - ./:/app:rw
+    - ./.bundle-cache-dir:/usr/local/bundle/
   ports:
     - "3000:3000"
   links:

@@ -32,3 +32,4 @@
 
 .idea/
 _db/
+.bundle-cache-dir/

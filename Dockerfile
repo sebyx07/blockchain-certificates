@@ -13,11 +13,15 @@ RUN apt-get update && \
   bison \
   vim
 
+RUN git clone https://github.com/facebook/watchman.git &&\
+    cd watchman &&\
+    git checkout v4.7.0 &&\
+    ./autogen.sh &&\
+    ./configure &&\
+    make &&\
+    make install
+
 RUN mkdir -p /app
 WORKDIR /app
 
 RUN npm i -g phantomjs-prebuilt yarn ember-cli@3.3.0
-
-RUN gem install bundler
-COPY Gemfile Gemfile.lock ./
-RUN bundle install --jobs 20 --retry 5

@@ -1,0 +1,10 @@
+{
+  "name": "Blockstack Certificates",
+  "start_url": "https://www.blockstack-certificates.tk",
+  "description": "Certificates for education institutes",
+  "icons": [{
+    "src": "https://www.blockstack-certificates.tk/logo-192x192.png",
+    "sizes": "192x192",
+    "type": "image/png"
+  }]
+}
